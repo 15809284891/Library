@@ -1,0 +1,48 @@
+//
+//  PrefixHeader.pch
+//  图书管理
+//
+//  Created by shixihao on 16/8/24.
+//  Copyright © 2016年 lixue. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define MAS_SHORTHAND//只要添加了这个宏，就不用带mas了,必须定义在#import "Masonry.h"之前
+#define MAS_SHORTHAND_GLOBALS//添加了该宏，就可以用equlto了，会自动包装
+#import "Masonry.h"
+#import "FMDB.h"
+#import "DataBaseTool.h"
+#define   StatusHeight  [[UIApplication sharedApplication] statusBarFrame].size.height//系统状态栏高度
+#define tabbarHeight  44
+#define NavigationBarHeight  self.navigationController.navigationBar.bounds.size.height//导航栏高度
+#define Viewwidth self.view.bounds.size.width
+#define Viewheight self.view.bounds.size.height
+#define screenH  [[UIScreen mainScreen]bounds].size.height
+#define screenW [[UIScreen mainScreen]bounds].size.width
+#define tabbarHeight  self.tabBarController.tabBar.bounds.size.height
+
+/**tabbar背景颜色*/
+#define LXbarTintColor [UIColor colorWithRed:242/255.0 green:92/255.0 blue:90/255.0 alpha:1.0]
+/**view背景颜色*/
+#define LXViewBacColor [UIColor colorWithRed:233/255.0 green:233/255.0 blue:233/255.0 alpha:1.0]
+#define ServiceName @"cn.lixue.libraray"
+#import "MJRefresh.h"
+#import "SVProgressHUD.h"
+#import "MJExtension.h"
+#import "LXHTTPHelperClass.h"
+#import "LXAPI.h"
+#import "LXNavigationController.h"
+#import "UIImage+BtnImage.h"
+#import "MBProgressHUD.h"
+#import "SSKeychain.h"
+#import "MBProgressHUD+MyHUD.h"
+#import "GMDCircleLoader.h"
+#import "NSString+URL.h"
+#import "UIBarButtonItem+Navigation.h"
+#import "NoNetWorkView.h"
+extern BOOL whetherHaveNetwork;
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
